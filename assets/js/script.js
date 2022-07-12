@@ -1,3 +1,4 @@
+$("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 var myTimeBlock = document.querySelector('.timeblock')
 var currentDay = moment().format("MMM Do YY")
