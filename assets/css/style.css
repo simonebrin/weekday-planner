@@ -1,11 +1,11 @@
- * {
+ /* * {
     font-family: itc-avant-garde-gothic-pro,sans-serif;
     font-weight: 550;
     font-style: normal;
-}
+} */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-size: 16px;
   line-height: 1;
 }
@@ -25,6 +25,9 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  font-family: itc-avant-garde-gothic-pro,sans-serif;
+  font-weight: 550;
+  font-style: normal;
 }
 
 .description{
@@ -34,6 +37,9 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  font-family: itc-avant-garde-gothic-pro,sans-serif;
+  font-weight: 550;
+  font-style: normal;
 }
 
 .row {
