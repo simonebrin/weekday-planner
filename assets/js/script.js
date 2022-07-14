@@ -1,8 +1,9 @@
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-var myTimeBlock = document.querySelector('.timeblock')
+var myTimeBlock = document.querySelector('.hour')
+var timeBackground = document.querySelector('textarea')
 var currentDay = moment().format("MMM Do YY")
-var currentHour = moment().format("HH")
+var currentHour = moment().hour()
 console.log(currentHour)
 console.log(currentDay)
 function checkTime() {
@@ -18,14 +19,15 @@ function checkTime() {
             myTimeBlock[i].classList.remove('present')
             myTimeBlock[i].classList.remove('past')
         }
+       
 
     }
 }
-
-console.log(localStorage.getItem('10am'))
+checkTime();
+// console.log(localStorage.getItem('10am'))
 
 // On save, it will take the input the user put in, and save it into localstorage in respect of that timeblock
-var testEl = document.querySelector('#test')
-testEl.textContent = localStorage.getItem('10am')
+// var testEl = document.querySelector('#test')
 localStorage.setItem('10am', 'Go to Work')
 localStorage.setItem('11am', 'LEavfework')
+// testEl.textContent = localStorage.getItem('10am')
