@@ -1,9 +1,11 @@
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-var myTimeBlock = document.querySelector('.hour')
-var timeBackground = document.querySelector('textarea')
+var myTimeBlock = document.getElementsByClassName('time-block')
+// var myTimeBlock = document.querySelector(".hour")
+// var timeBackground = document.querySelector('time-block')
 var currentDay = moment().format("MMM Do YY")
 var currentHour = moment().hour()
+// var currentHour = moment().format("hh")
 console.log(currentHour)
 console.log(currentDay)
 function checkTime() {
