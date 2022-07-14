@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.typekit.net/isy5yhs.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -28,12 +29,41 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">
+            <div class="col">
+              09:00
+            </div>
+          </th>
+          <th scope="col"><input type="text" class="form-control"></th>
+          <th scope="col"><button class="btn btn-primary">save</button></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="container-fluid">
       <div class="row">
       <!-- Timeblocks go here -->
       <!-- <p id="test"></p> -->
       <div id="9am" class="row Timeblocks">
-        <div class="col-2">
+        <div class="col">
           09:00
         </div>
       <!-- <div class="form-row"> -->
@@ -42,8 +72,7 @@
         </div> -->
       </div>
       <div class="col-8"><input type="text" class="form-control"></div>
-      <div class="col-2"><button class="btn btn-primary">save</button></div>
-      <!-- Time Block grid 2 8 2 || 1 10 1 -->
+      <div class="col"><button class="btn btn-primary">save</button></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
