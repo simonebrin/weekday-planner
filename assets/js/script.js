@@ -1,6 +1,8 @@
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 var myTimeBlock = document.getElementsByClassName('time-block')
+// var myTimeBlock = document.getElementsById()
+// var myTimeBlock = document.getElementsById(parseInt(myTimeBlock[i].id.substring))
 // var myTimeBlock = document.getElementsByClassName('hour')
 // var myTimeBlock = document.getElementsByClassName('datetime')
 // var myTimeBlock = document.querySelector(".hour")
@@ -15,9 +17,11 @@ function checkTime() {
     for (let i = 0; i < myTimeBlock.length; i++) {
         //currentHour is going to equal 11
         console.log(myTimeBlock[i].textContent, currentHour)
-        if (myTimeBlock[i].textContent < currentHour) {
+        console.log(parseInt(myTimeBlock[i].id.substring(5)))
+        if ((parseInt(myTimeBlock[i].id.substring(5))) < currentHour) {
             myTimeBlock[i].classList.add('past')
-        }else if (myTimeBlock[i].textContent === currentHour){
+        }else if ((parseInt(myTimeBlock[i].id.substring(5))) === currentHour){
+            myTimeBlock[i].classList.remove('future')
             myTimeBlock[i].classList.add('present')
             myTimeBlock[i].classList.remove('past')
         }else {
