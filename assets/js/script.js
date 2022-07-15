@@ -38,6 +38,11 @@ checkTime();
 
 // On save, it will take the input the user put in, and save it into localstorage in respect of that timeblock
 // var testEl = document.querySelector('#test')
+var testEl = document.getElementsByClassName('col-sm-10 description')
+// var testEl = document.getElementById('#test')
+console.log(testEl)
 localStorage.setItem('10am', 'Go to Work')
+localStorage.setItem('hour-9', 'textarea')
 localStorage.setItem('11am', 'LEavfework')
-// testEl.textContent = localStorage.getItem('10am')
+// testEl = localStorage.getItem('hour-9')
+
