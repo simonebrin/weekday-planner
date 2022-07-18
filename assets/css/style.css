@@ -1,13 +1,7 @@
- /* * {
-    font-family: itc-avant-garde-gothic-pro,sans-serif;
-    font-weight: 550;
-    font-style: normal;
-} */
-
 body {
-  /* font-family: 'Open Sans', sans-serif; */
   font-size: 16px;
   line-height: 1;
+  padding-bottom: 25px;
 }
 
 textarea{
@@ -69,7 +63,7 @@ textarea{
   color: white;
 }
 
-.saveBtn, .saveBtn-1 {
+.saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -77,7 +71,7 @@ textarea{
   color: white;
 }
 
-.saveBtn, .saveBtn-1 i:hover {
+.saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
